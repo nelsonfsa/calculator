@@ -1,0 +1,46 @@
+<html>
+<head>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	
+	<script type="text/javascript">
+	
+		function  displaynum(result){
+		
+		calform.inputcal.value=calform.inputcal.value+result;
+		
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<br>
+<div class="container">
+	<form name="calform">
+		<input type="text" id="inputcal" style="text-align:right" ><br><br>
+
+		<button name="btn1" type="button" value='1'  class="btn btn-primary" onclick="displaynum(btn1.value)">1</button>
+		<button name="btn2" type="button" value='2'  class="btn btn-primary" onclick="displaynum(btn2.value)">2</button>
+		<button name="btn3" type="button" value='3'  class="btn btn-primary" onclick="displaynum(btn3.value)">3</button>
+		<button name="btn4" type="button" value='4'  class="btn btn-primary" onclick="displaynum(btn4.value)">4</button><br><br>
+		<button name="btn5" type="button" value='5'  class="btn btn-primary" onclick="displaynum(btn5.value)">5</button>
+		<button name="btn6" type="button" value='6'  class="btn btn-primary" onclick="displaynum(btn6.value)">6</button>
+		<button name="btn7" type="button" value='7'  class="btn btn-primary" onclick="displaynum(btn7.value)">7</button>
+		<button name="btn8" type="button" value='8'  class="btn btn-primary" onclick="displaynum(btn8.value)">8</button><br><br>
+		<button name="btn9" type="button" value='9'  class="btn btn-primary" onclick="displaynum(btn9.value)">9</button>
+		<button name="btn0" type="button" value='0'  class="btn btn-primary" onclick="displaynum(btn0.value)">0</button>
+		<button name="btnplus" type="button" value='+'  class="btn btn-primary" onclick="displaynum(btnplus.value)" >+</button>	
+		<button name="btnsub" type="button" value='-'  class="btn btn-primary" onclick="displaynum(btnsub.value)" >-</button><br><br>
+		<button name="btnmultiply" type="button" value='*'  class="btn btn-primary" onclick="displaynum(btnmultiply.value)" >*</button>
+		<button name="btndivider" type="button" value='/'  class="btn btn-primary" onclick="displaynum(btndivider.value)" >/</button>			
+		<button name="btnclear" type="button" value='C'  class="btn btn-danger" onclick="inputcal.value=''" > C</button>
+		<button name="btnequal" type="button" value='='  class="btn btn-danger" onclick="inputcal.value=eval(inputcal.value)">=</button>	
+	</form>	
+</div>
+
+</body>
+
+</html>
